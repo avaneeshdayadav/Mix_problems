@@ -9,7 +9,7 @@ class Solution {
 public:
     int trap(vector<int>& arr) {
         
-        int L = 0, R = arr.size()-1, arrSize = arr.size(), leftMax = INT_MIN, rightMax = INT_MIN;
+        int arrSize = arr.size(), leftMax = INT_MIN, rightMax = INT_MIN;
         int leftMaxArr[arrSize], rightMaxArr[arrSize], totalWater = 0;
         
         leftMaxArr[0] = rightMaxArr[arrSize-1] = 0;
